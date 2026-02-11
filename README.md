@@ -34,3 +34,29 @@ Graphs/
 DP/
 Greedy/
 BitManipulation/
+```
+
+---
+
+## 🧠 Solution Format
+Each solution may include:
+- Approach / Logic
+- Time Complexity
+- Space Complexity
+- Clean C++ Implementation
+
+---
+
+## 🎯 Goal
+To improve problem-solving skills and maintain a structured archive of solved DSA questions for revision and interview preparation.
+
+---
+
+## 🔗 Platforms Practiced On
+- LeetCode
+- GeeksForGeeks
+- Coding Ninjas / CodeStudio
+
+---
+
+⭐ If you find this repository useful, feel free to star it.
