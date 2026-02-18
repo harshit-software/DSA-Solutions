@@ -1,3 +1,4 @@
+// Method 1
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
@@ -14,5 +15,24 @@ public:
         for(int i=0;i<k;i++){
             nums[i]=temp[i];
         }
+    }
+};
+
+// Method 2
+class Solution {
+public:
+    void reverse(vector<int>& arr, int low, int high) {
+        while (low < high) {
+            swap(arr[low], arr[high]);
+            low++;
+            high--;
+        }
+    }
+    void rotate(vector<int>& nums, int k) {
+        int n = nums.size();
+        k = k % n;
+        reverse(nums,0,n-k-1);
+        reverse(nums,n-k,n-1);
+        reverse(nums,0,n-1);
     }
 };
