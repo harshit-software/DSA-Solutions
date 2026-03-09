@@ -1,4 +1,4 @@
-// BruteForce Solution
+// BruteForce Solution for Positives Only
 int longestSubarrayWithSumK(vector<int> a, long long k) {
     int len = 0,n = a.size();
         for(int i=0;i<n;i++){
