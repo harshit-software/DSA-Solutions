@@ -25,3 +25,30 @@ public:
         return res;
     }
 };
+
+// Better Solution
+class Solution {
+public:
+    vector<int> luckyNumbers(vector<vector<int>>& matrix) {
+        vector<int> res;
+        int n=matrix.size(),m=matrix[0].size();
+        for(int i=0;i<n;i++){
+            int small=matrix[i][0],col=0;
+            for(int j=1;j<m;j++){
+                if(small>matrix[i][j]){
+                    small=matrix[i][j];
+                    col=j;
+                }
+            }
+            bool ismax=true;
+            for(int k=0;k<n;k++){
+                if(matrix[k][col]>small){
+                    ismax=false;
+                    break;
+                }
+            }
+            if(ismax) res.push_back(small);
+        }
+        return res;
+    }
+};
